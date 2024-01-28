@@ -26,9 +26,3 @@ const commonConfig: Knex.Config = {
 };
 
 export default Object.fromEntries(environments.map((env: string) => [env, commonConfig]));
-
-
-//npx knex migrate:make create_users_table --migrations-directory src/database/migrations -x ts
-
-
-//npx knex seed:make doctors --migrations-directory src/database/migrations -x ts
